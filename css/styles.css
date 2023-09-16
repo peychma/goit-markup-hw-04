@@ -124,13 +124,13 @@ p {
     padding-bottom: 120px;
 }
 .second-section .about-us .pic {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            stroke-width: 1px;
-            stroke: #2E2F42;
-            fill: #F4F4FD;
-        }
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 1px;
+    stroke: #2E2F42;
+    fill: #F4F4FD;
+    }
 .visually-hidden {
     visibility: hidden;
     position: absolute;
