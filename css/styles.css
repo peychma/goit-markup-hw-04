@@ -90,6 +90,7 @@ p {
 .first-section .button:focus {
     background-color: #404BBF;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
 }
 
@@ -122,6 +123,14 @@ p {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.second-section .about-us .pic {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 1px;
+            stroke: #2E2F42;
+            fill: #F4F4FD;
+        }
 .visually-hidden {
     visibility: hidden;
     position: absolute;
@@ -189,9 +198,17 @@ p {
     display: inline-block;
     width: 40px;
     height: 40px;
-    stroke-width: 1;
-    stroke: #E7E9FC;
+    stroke: #F4F4FD;
+    stroke-width: 1px;
+    fill: #4d5ae5;
+    justify-content: center;
+    width: calc((100% - 80px) / 3)
+}
+.third-section .teem .first .icon:hover {
     fill: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
 }
 
 
@@ -242,6 +259,26 @@ p {
 }
 .fourth-section .portfolio .paragraf:hover {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+.fourth-section .portfolio .transform {
+    position: relative;
+    overflow: hidden;
+}
+.fourth-section .portfolio .transform:hover .overlay {
+    transform: translateY(0);
+}
+.overlay {
+    background-color: #4D5AE5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
 }
 
 .header .address .contacts .link {
@@ -255,6 +292,9 @@ p {
 .header .address .contacts .link:hover,
 .header .address .contacts .link:focus {
 color: #404BBF;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: background-color;
 }
 .header .address .contacts{
     list-style: none;
@@ -292,6 +332,9 @@ color: #404BBF;
 .header .nav .list .link:hover,
 .header .nav .list .link:focus {
     color: #404bbf;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
 }
 .header .nav .list {
     list-style: none;
@@ -328,12 +371,32 @@ color: #404BBF;
 .footer .accentt {
     color: #F4F4FD;
 }
-
 .footer .text {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+}
+.footer .h4 {
+    color: #FFFFFF;
+}
+.footer .icons {
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    stroke-width: 0.5px;
+    stroke: #F4F4FD;
+    fill: #404BBF;
+    padding: 0;
+    margin: 0;
+}
+.footer .icons:hover {
+    fill: #31D0AA;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
 }
 .footer {
     background-color: #2E2F42;
