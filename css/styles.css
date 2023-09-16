@@ -160,6 +160,14 @@ p {
     letter-spacing: 0.02em;
     text-align: center;
 }
+.third-section .teem .first .icons {
+     display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: #F4F4FD;
+    fill: #4D5AE5;
+}
 .third-section .teem .first{
     padding: 32px 0;
 }
