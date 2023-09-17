@@ -119,8 +119,7 @@ p {
     width: calc((100% - 72px) / 4);
 }
 .second-section .about-us .paragraf .stroke {
-    stroke-width: 2px;
-    stroke: #2E2F42;
+    fill: #2E2F42;
 }
 .second-section .about-us .pic {
     display: flex;
@@ -129,6 +128,8 @@ p {
     height: 112px;
     background-color: #f4f4fd;
     border-radius: 4px;
+    border: 1px solid;
+    border-color: #8E8F99;
     margin-bottom: 8px;
 }
 .second-section {
@@ -226,6 +227,8 @@ p {
     fill: #f4f4fd;
     align-items: center;
     justify-content: center;
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -279,25 +282,10 @@ p {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
-.fourth-section .portfolio .paragraf .image {
+.overlay .image {
     position: relative;
     overflow: hidden;
 }
-.fourth-section .portfolio .paragraf .image .abstract {
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 40px 32px;
-    color: #f4f4fd;
-    background-color: #4d5ae5;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 
 .header .address .contacts .link {
     text-decoration: none;
@@ -306,6 +294,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header .address .contacts .link:hover,
 .header .address .contacts .link:focus {
@@ -347,9 +336,8 @@ color: #404BBF;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .nav .list .link:hover::after,
-.header .nav .list .link:focus::after {
-    text-decoration: none;
+.header .nav .list .link:hover,
+.header .nav .list .link:focus{
     content: '';
     background-color: #404bbf;
     position: absolute;
@@ -448,4 +436,6 @@ color: #404BBF;
 }
 .footer .www .ppp .ggg .icons {
     fill: #F4F4FD;
+    width: 24px; 
+    height: 24px;
 }
