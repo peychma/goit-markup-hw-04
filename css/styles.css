@@ -282,12 +282,33 @@ p {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
-.overlay .image {
+.paragraf .cards {
     position: relative;
     overflow: hidden;
 }
+.paragraf:hover .overlay {
+    transform: translatey(0%);
+}
+.overlay {
+    position: absolute;
+    color: #f4f4fd;
+    background-color: #4D5AE5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-size: 16px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.header .address .contacts .link {
+
+.header .address .contacts .links {
     text-decoration: none;
     letter-spacing: 0.02em;
     color: #434455;
@@ -296,8 +317,8 @@ p {
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .address .contacts .link:hover,
-.header .address .contacts .link:focus {
+.header .address .contacts .links:hover,
+.header .address .contacts .links:focus {
 color: #404BBF;
 }
 .header .address .contacts{
@@ -326,7 +347,7 @@ color: #404BBF;
 .header .nav .accent {
     color: #2e2f42;
 }
-.header .nav .list .link {
+.link {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -336,15 +357,22 @@ color: #404BBF;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .nav .list .link:hover,
-.header .nav .list .link:focus{
-    content: '';
-    background-color: #404bbf;
+.link:hover::after {
+    content: "";
     position: absolute;
+    display: inline-block;
     left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     bottom: -1px;
     height: 4px;
     border-radius: 2px;
+    background-color: #404bbf;
+}
+.header .nav .list .link:hover,
+.header .nav .list .link:focus{
+    color: #404bbf;
 }
 .header .nav .list {
     list-style: none;
